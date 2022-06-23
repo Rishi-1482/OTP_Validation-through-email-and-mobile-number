@@ -1,0 +1,12 @@
+<body>
+<h2>Verificatoin page</h2>
+{% if msg == '' %}
+<form action='/verifyOTP' method="POST">
+    <p>OTP sent</p>
+    <input type="text" name="enterOTP" placeholder="Enter OTP">
+    <button type="submit">Submit</button>
+</form>
+{% else %}
+<h3>{{ msg }}</h3>
+{% endif %}
+</body>
